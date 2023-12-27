@@ -19,15 +19,15 @@ for (int i=0; i<3; i++){
 }
 int main(){
     char board[3][3]={
-        {'X', '2', '3'},
-        {'4', 'X', '6'},
-        {'7', '8', 'X'}
+        {'1', '2', '3'},
+        {'4', '5', '6'},
+        {'7', '8', '9'}
     };
     int count=0;
     bool winner=false;
     int num;
-     displayBoard(board);
-     while(winner=false){
+     while(winner==false){
+        displayBoard(board);
      cout<<"\n Enter A number to palce X:  ";
      cin>>num;
     playerX(num, board);
